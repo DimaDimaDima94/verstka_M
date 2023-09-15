@@ -10,7 +10,7 @@
 
 <meta charset="UTF-8">
 
-<title>Веб-страница с php кодом</title>
+<title>Веб-страница с php кодом !!!</title>
 
 </head>
 
@@ -23,9 +23,10 @@
 
 <table>
     <tr>  
-        <!-- <td  colspan="1"> <img no-repeat src="img/desctop_carcas.png" width="100%" alt=""> </td> -->
+        <td  colspan="1"> <img no-repeat src="img/desctop_carcas.png" width="100%" alt=""> </td>
     </tr>
 </table>
+
 
 
 
