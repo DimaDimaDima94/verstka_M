@@ -1,54 +1,54 @@
-@mixin font ($color: red, $fontW: bold) {
-    font-size: $mainFontSize;
-    font-weight: $fontW;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $color;
-}
+// @mixin font ($color: #363F46, $fontW: bold) {
+//     font-size: $mainFontSize;
+//     font-weight: $fontW;
+//     font-family: Arial, Helvetica, sans-serif;
+//     color: $color;
+// }
 
-@mixin padd($padd...){
-    padding: $padd;
-}
+// @mixin padd($padd...){
+//     padding: $padd;
+// }
 
-@mixin link($link, $hover, $active, $visited){
-    a{
-    color: $link;
-    &:hover{
-        //color: darken($link,20%);
-        color: lighten($link, 30%);
-    }
-    &:active{
-        color: $active;
-    }
-    &:visited{
-        color: $visited;
-    }
-    @content;
-}
-}
+// @mixin link($link, $hover, $active, $visited){
+//     a{
+//     color: $link;
+//     &:hover{
+//         //color: darken($link,20%);
+//         color: lighten($link, 30%);
+//     }
+//     &:active{
+//         color: $active;
+//     }
+//     &:visited{
+//         color: $visited;
+//     }
+//     @content;
+// }
+// }
 
-@mixin grid($cols, $margin){
-    // cols - передаем количество блоков в 1 ряду
-    // margin - расстояние между блоками и между рядами 
-    float: left;
-    background: #ce3d3d;
-    margin-right: $margin;
-    margin-bottom: $margin;
-    height: 150px;
+// @mixin grid($cols, $margin){
+//     // cols - передаем количество блоков в 1 ряду
+//     // margin - расстояние между блоками и между рядами 
+//     float: left;
+//     background: #363F46;
+//     margin-right: $margin;
+//     margin-bottom: $margin;
+//     height: 150px;
 
-    // > < => <= !=
-    @if($cols >= 5){
-        width: 100%;
-        margin-right: 0;
-    }
-    @else{
-        width: ((100% - (($cols - 1 ) * $margin)) / $cols);
-        margin-right: $margin;
-    }
+//     // > < => <= !=
+//     @if($cols >= 5){
+//         width: 100%;
+//         margin-right: 0;
+//     }
+//     @else{
+//         width: ((100% - (($cols - 1 ) * $margin)) / $cols);
+//         margin-right: $margin;
+//     }
 
 
     
 
-    &:nth-child(#{$cols}n){
-        margin-right: 0;
-    }
-}
+//     &:nth-child(#{$cols}n){
+//         margin-right: 0;
+//     }
+// }
