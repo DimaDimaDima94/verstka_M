@@ -5,20 +5,86 @@
 
 
 
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('./my-fonts-cirill/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+h1{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+h2{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+h3{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+h4{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+h5{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+h6{
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+
+#heading{
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    top:250%;
+}
+
+// #big_text{
+
+// }
+
 *{
     padding: 0;
     margin: 0;
-    background: #191919;
-}
-
-table {
-    border: #191919;
     
 }
-body {
-    background-color: #191919;
-    background: #dfd5d5;
+
+.fon {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left:10%;
+    right: 10%;
+    bottom: 10%;
 }
+.text {
+    z-index: 2;
+    // top: 10%;
+    // left:10%;
+    // right: 10%;
+    // bottom: 10%;
+    position: absolute;
+}
+// table {
+//     border: #191919;
+    
+    
+//}
+
 
 // @include link(rgb(20, 13, 13),rgb(32, 30, 30),blue,green);
 
@@ -28,13 +94,13 @@ body {
 //     };
 // }
 
-// a{
-//     @include font();
-//     // @include link(rgb(20, 13, 13),red,blue,green);
-// }
+a{
+    @include font();
+    @include link(rgb(20, 13, 13),rgb(19, 17, 17),blue,green);
+}
 
 // .block:not(.first){
-//     //@include padd(300px 200px 300px 140px);
+//     @include padd(300px 200px 300px 140px);
 //     background: $bgcolor;
 //     height: 200px;
 //     margin-bottom: 20px;
@@ -78,7 +144,7 @@ body {
 
 //     li {
 //         float: left;
-//         //margin-right: 10px;
+//         margin-right: 10px;
 //         width: (100% / 4 - 1%)
         
 //     }
@@ -95,9 +161,9 @@ body {
 //     // }
 
 // }
-// // a {
-// //     @include font();
-// // }
+// a {
+//     @include font();
+// }
 
 // #central_block > ul {
 //     list-style: none;

@@ -61,7 +61,9 @@ function sync(done){
 
 function browserReload(done){
     
+    
     browserSync.reload();
+    
     done();
 }
 
